@@ -1,0 +1,28 @@
+name: 功能建议
+description: 提出一个可讨论的改进建议
+title: "[建议] "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢建议。Issue 是公开内容，请勿提交密码、Cookie、登录验证码、私信内容、私人附件或其他敏感信息。
+  - type: textarea
+    id: problem
+    attributes:
+      label: 想解决的问题
+      description: 请说明使用场景与当前的不便。
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议的方式
+      description: 描述你期待的行为即可，不需要提供技术方案。
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 补充信息
+      description: 可选。请勿发布私人内容或凭据。

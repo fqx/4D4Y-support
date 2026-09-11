@@ -1,0 +1,45 @@
+name: 问题报告
+description: 报告可复现的问题
+title: "[问题] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈。Issue 是公开内容，请勿提交密码、Cookie、登录验证码、私信内容、私人附件、完整账号信息或其他敏感信息。
+  - type: textarea
+    id: summary
+    attributes:
+      label: 问题描述
+      description: 请简要说明实际发生的情况与预期结果。
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      placeholder: |
+        1. …
+        2. …
+        3. …
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: 应用版本
+      placeholder: 例如 0.1.0
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: 设备与系统版本
+      placeholder: 例如 iPhone 16，iOS 26.5
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: 补充信息
+      description: 可粘贴已脱敏的错误信息。请勿附带私人内容或凭据。
